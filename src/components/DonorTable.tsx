@@ -6,7 +6,7 @@ type Props = {
 };
 
 function money(n: number) {
-  return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n || 0);
+  return new Intl.NumberFormat("en-NP", { style: "currency", currency: "NPR" }).format(n || 0);
 }
 
 export default function DonorTable({ donors }: Props) {
