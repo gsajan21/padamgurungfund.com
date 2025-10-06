@@ -1,17 +1,15 @@
-
-export type Donor = {
-  id: string;
-  name: string;
-  amount: number;
-  date: string;
-};
+import React from "react";
+import type { Donor } from "../data/donors";
 
 type Props = {
   donors: Donor[];
-  formatCurrency: (n: number) => string;
 };
 
-export default function DonorTable({ donors, formatCurrency }: Props) {
+function money(n: number) {
+  return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n || 0);
+}
+
+export default function DonorTable({ donors }: Props) {
   return (
     <section className="card overflow-hidden">
       <div className="px-6 pt-5 pb-4 border-b border-slate-200/70">
@@ -27,20 +25,19 @@ export default function DonorTable({ donors, formatCurrency }: Props) {
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
-            {donors.length === 0 ? (
+            {donors.map((d) => (
+              <tr key={d.id} className="table-row">
+                <td className="px-6 py-3 font-medium">{d.name}</td>
+                <td className="px-6 py-3">{money(d.amount)}</td>
+                <td className="px-6 py-3 tabular-nums">{d.date}</td>
+              </tr>
+            ))}
+            {donors.length === 0 && (
               <tr>
                 <td colSpan={3} className="px-6 py-10 text-center text-slate-500">
                   No donors yet.
                 </td>
               </tr>
-            ) : (
-              donors.map((d) => (
-                <tr key={d.id} className="table-row">
-                  <td className="px-6 py-3 font-medium">{d.name}</td>
-                  <td className="px-6 py-3">{formatCurrency(d.amount)}</td>
-                  <td className="px-6 py-3 tabular-nums">{d.date}</td>
-                </tr>
-              ))
             )}
           </tbody>
         </table>
