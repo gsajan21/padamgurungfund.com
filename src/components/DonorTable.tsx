@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { Donor } from "../data/donors";
 
 type Props = {
