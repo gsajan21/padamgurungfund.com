@@ -34,7 +34,7 @@ export default function DonorTable({ donors, formatCurrency }: Props) {
                 </td>
               </tr>
             ) : (
-              donors.map((d, i) => (
+              donors.map((d) => (
                 <tr key={d.id} className="table-row">
                   <td className="px-6 py-3 font-medium">{d.name}</td>
                   <td className="px-6 py-3">{formatCurrency(d.amount)}</td>
