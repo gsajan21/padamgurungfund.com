@@ -8,9 +8,11 @@ import "./styles/index.css";
 const STORAGE_KEY = "pgf_donors_v1";
 
 const seedDonors: Donor[] = [
-  { id: "d1", name: "Prem Gurung", amount: 200, date: "2025-09-15" },
-  { id: "d2", name: "Gaurab Gurung", amount: 150, date: "2025-09-20" },
-  { id: "d3", name: "Gopini Gurung", amount: 300, date: "2025-10-01" },
+  { id: "d1", name: "Ritu Gurung", amount: 2500, date: "2025-10-06" },
+  { id: "d2", name: "Krishna (Saila) Gurung", amount: 2500, date: "2025-10-06" },
+  { id: "d3", name: "Sandesh Gurung", amount: 2660, date: "2025-10-06" },
+  { id: "d3", name: "Antim Gurung", amount: 1510, date: "2025-10-06" },
+  { id: "d3", name: "Sajan Gurung", amount: 7025, date: "2025-10-06" },
 ];
 
 function money(n: number) {
