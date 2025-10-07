@@ -1,4 +1,4 @@
-import React from "react";
+
 import DonorTable from "../components/DonorTable";
 import { donors } from "../data/donors";
 
