@@ -5,8 +5,6 @@ export type Donor = {
   date: string;
 };
 
-// src/data/donors.ts
-const today = new Date().toLocaleDateString('en-CA'); // → "YYYY-MM-DD"
 
 export const donors: Donor[] = [
   { id: "d1", name: "Ritu Gurung", amount: 2500, date: "2025-10-06" },
@@ -22,11 +20,11 @@ export const donors: Donor[] = [
   { id: "d11", name: "Kamal Gurung", amount: 2000, date: "2025-10-06" },
   { id: "d12", name: "Raj Bahadur Gurung", amount: 1000, date: "2025-10-06" },
   { id: "d13", name: "Sapana Gurung", amount: 5000, date: "2025-10-06" },
-  { id: "d14", name: "Subash Gurung", amount: 1015, date: today},
-  { id: "d15", name: "Maya Gurung", amount: 1000, date: today },
-  { id: "d16", name: "Sushila Gurung", amount: 1000, date: today },
-  { id: "d17", name: "Malati Gurung", amount: 1000, date: today },
-  { id: "d18", name: "Lalu Maya Thapa", amount: 2500, date: today },
-  { id: "d19", name: "Samjhana Thapa", amount: 2000, date: today },
-  { id: "d20", name: "Krishna Bahadur Thapa", amount: 2500, date: today },
+  { id: "d14", name: "Subash Gurung", amount: 1015, date: "2025-10-08"},
+  { id: "d15", name: "Maya Gurung", amount: 1000, date: "2025-10-08" },
+  { id: "d16", name: "Sushila Gurung", amount: 1000, date: "2025-10-08" },
+  { id: "d17", name: "Malati Gurung", amount: 1000, date: "2025-10-08" },
+  { id: "d18", name: "Lalu Maya Thapa", amount: 2500, date: "2025-10-09" },
+  { id: "d19", name: "Samjhana Thapa", amount: 2000, date: "2025-10-09" },
+  { id: "d20", name: "Krishna Bahadur Thapa", amount: 2500, date: "2025-10-09" },
 ];
