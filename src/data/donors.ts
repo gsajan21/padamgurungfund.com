@@ -10,7 +10,7 @@ const today = new Date().toLocaleDateString('en-CA'); // → "YYYY-MM-DD"
 
 export const donors: Donor[] = [
   { id: "d1", name: "Ritu Gurung", amount: 2500, date: "2025-10-06" },
-  { id: "d2", name: "Krishna (Saila) Gurung", amount: 2500, date: "2025-10-06" },
+  { id: "d2", name: "Krishna Bahadur Gurung(Saila)", amount: 2500, date: "2025-10-06" },
   { id: "d3", name: "Sandesh Gurung", amount: 2660, date: "2025-10-06" },
   { id: "d4", name: "Antim Gurung", amount: 1510, date: "2025-10-06" },
   { id: "d5", name: "Sajan Gurung", amount: 7025, date: "2025-10-06" },
@@ -26,4 +26,7 @@ export const donors: Donor[] = [
   { id: "d15", name: "Maya Gurung", amount: 1000, date: today },
   { id: "d16", name: "Sushila Gurung", amount: 1000, date: today },
   { id: "d17", name: "Malati Gurung", amount: 1000, date: today },
+  { id: "d18", name: "Lalu Maya Thapa", amount: 2500, date: today },
+  { id: "d19", name: "Samjhana Thapa", amount: 2000, date: today },
+  { id: "d20", name: "Krishna Bahadur Thapa", amount: 2500, date: today },
 ];
